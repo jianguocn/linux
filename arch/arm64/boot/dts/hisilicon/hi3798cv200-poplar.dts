@@ -63,6 +63,10 @@
 	};
 };
 
+&ehci {
+	status = "okay";
+};
+
 &gmac1 {
 	status = "okay";
 	#address-cells = <1>;
@@ -146,6 +150,10 @@
 	status = "okay";
 };
 
+&ohci {
+	status = "okay";
+};
+
 &sd0 {
 	bus-width = <4>;
 	cap-sd-highspeed;
@@ -166,3 +174,11 @@
 	label = "LS-UART0";
 };
 /* No optional LS-UART1 on Low Speed Expansion Connector. */
+
+&xhci0 {
+	status = "okay";
+};
+
+&xhci1 {
+	status = "okay";
+};
